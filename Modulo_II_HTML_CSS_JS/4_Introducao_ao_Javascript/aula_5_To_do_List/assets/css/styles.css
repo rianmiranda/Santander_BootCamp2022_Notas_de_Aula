@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    margin: auto;
+    max-width: 600px;
+}
+
+.counter-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 3rem;
+}
+
+.counter-wrapper h1 {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+
+
+.add-task {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.input-box {
+    margin-right: 0.5%;
+}
+
+.btn {
+    margin-left: 0.5%;
+    width: 60px;
+    background-color: #0095f6;
+    border-radius: 5px;
+    border: none;
+    color: white;
+}
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+}
+
+#to-do-list div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#to-do-list div input {
+    margin-right: 5px;
+}
+
+:checked + label {
+    text-decoration: line-through;
+    color: grey;
+}
