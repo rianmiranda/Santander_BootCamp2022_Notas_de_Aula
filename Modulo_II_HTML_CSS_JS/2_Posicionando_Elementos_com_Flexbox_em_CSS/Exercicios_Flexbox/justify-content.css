@@ -1,0 +1,39 @@
+.flex_container {
+    max-width: 400px;
+    border: 1px solid black;
+    margin: 0;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.item {
+    background-color: blueviolet;
+    margin: 5px;
+    text-align: center;
+    color: white;
+}
+
+.column {
+    flex-direction: column;
+    min-height: 200px;
+}
+
+.start {
+    justify-content: flex-start;
+}
+
+.end {
+    justify-content: end;
+}
+
+.center {
+    justify-content: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.space_around {
+    justify-content: space-around;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex-basis.css" >
+    <title>Fundamentos - Flex Basis</title>
+</head>
+<body>
+    <p>Basis = auto</p>
+    <div class="flex_container">
+        <div class="item b-auto fg-1">A</div>
+        <div class="item b-auto fg-1">BBB</div>
+        <div class="item b-auto fg-1">C</div>
+        <div class="item b-auto fg-2">DDD</div>
+    </div>
+
+    <p>Basis = 0</p>
+    <div class="flex_container">
+        <div class="item b-0 fg-1">AAAA</div>
+        <div class="item b-0 fg-1">BBB</div>
+        <div class="item b-0 fg-1">C</div>
+        <div class="item b-0 fg-1">DDD</div>
+    </div>
+
+    <p>Basis = 0 + width</p>
+    <div class="flex_container wrap">
+        <div class="item w-100 fg-3">AAAA</div>
+        <div class="item w-100 fg-2">BBB</div>
+        <div class="item w-100 fg-2">C</div>
+        <div class="item w-100 fg-2">DDD</div>
+        <div class="item w-100 fg-3">AAAA</div>
+        <div class="item w-100 fg-2">BBB</div>
+        <div class="item w-100 fg-2">C</div>
+
+    </div>
+</body>
+</html>

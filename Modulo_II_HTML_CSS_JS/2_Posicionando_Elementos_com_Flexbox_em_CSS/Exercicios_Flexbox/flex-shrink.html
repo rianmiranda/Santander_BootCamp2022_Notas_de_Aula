@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="flex-shrink.css" >
+    <title>Fundamentos - Flex Shrink</title>
+</head>
+<body>
+
+    <p>Shrink 1</p>
+    <div class="flex_container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-1 fg-1">b</div>
+        <div class="item s-1 fg-1">c</div>
+        <div class="item s-1 fg-1">d</div>
+        <div class="item s-1 fg-1">e</div>
+    </div>
+
+    <p>Shrink 1</p>
+    <div class="flex_container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-1 fg-1">Lorem ipsum </div>
+        <div class="item s-1 fg-1">c</div>
+        <div class="item s-1 fg-1">d</div>
+        <div class="item s-1 fg-1">e</div>
+    </div>
+
+    <p>Shrink 0 + Flex Basis = 100px</p>
+    <div class="flex_container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-0 fg-1">Lorem ipsum </div>
+        <div class="item s-0 fg-1">c Lorem ipsum</div>
+        <div class="item s-0 fg-1">d Lorem ipsum</div>
+        <div class="item s-1 fg-1">e</div>
+    </div>
+
+    <p>Shrink 1</p>
+    <div class="flex_container">
+        <div class="item s-1 fg-1">a</div>
+        <div class="item s-2 fg-1">Lorem ipsum </div>
+        <div class="item s-2 fg-1">c</div>
+        <div class="item s-3 fg-1">d</div>
+    </div>
+
+</body>
+</html>

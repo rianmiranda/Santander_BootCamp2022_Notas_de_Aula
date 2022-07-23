@@ -1,0 +1,49 @@
+.flex_container {
+    max-width: 500px;
+    border: 1px solid black;
+    display: flex;
+}
+
+.item {
+    background-color: coral;
+    color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.fg-0 {
+    flex-grow: 0;
+}
+
+.fg-1 {
+    flex-grow: 1;
+}
+
+.fg-2 {
+    flex-grow: 2;
+}
+
+.fg-3 {
+    flex-grow: 3;
+}
+
+.b-auto {
+    flex-basis: auto;
+}
+
+.b-0 {
+    flex-basis: 0;
+}
+
+.w-100 {
+    flex-basis: 100px;
+}
+
