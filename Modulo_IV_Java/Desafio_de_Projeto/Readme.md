@@ -3,9 +3,13 @@
 Este projeto conta com as seguintes classes:
 
 Bank: Banco;
+
 Client: Cliente;
+
 Account: Conta (classe abstrata)
+
 CheckingAccount: Conta corrente (filha da classe conta)
+
 SavingsAccount: Conta poupança (filha da classe conta)
 
 Além de apresentar os métodos withdraw() (sacar), deposit() (depositar), transfer() (transferir) e showReceipt() (extrato), demonstrados pelo instrutor durante a orientação, este projeto ainda implementa dois métodos adicionais:
@@ -13,14 +17,19 @@ Além de apresentar os métodos withdraw() (sacar), deposit() (depositar), trans
 ## setInvestorProfile(): 
 
 Tem como objetivo e declaração do perfil de investidor do cliente. Com base nesta informação, o rodapé do extrato convida o cliente a acessar o site do Banco Santander e conferir as opções de investimento que se encaixam no seu perfil.
+
 Caso o método não seja utilizado, o cliente não terá um perfil de investidor definido, e nenhuma mensagem será exibida no rodapé do extrato bancário.
 
 ### Veja um exemplo de aplicação do método setInvestorProfile():
 
 Selecione uma opção de perfil do investidor: 
+
 [0] Conservador
+
 [1] Moderado
+
 [2] Arrojado
+
 Valor selecionado: 1
 
 Como neste caso a opção 1 (Moderado) foi selecionada, o extrato será apresentado da seguinte maneira:
@@ -44,7 +53,7 @@ www.santander.com.br
 
 ====================================
 
-### earningsSimulator(): 
+## earningsSimulator(): 
 
 Este é um método exclusivo da conta poupança. Ao utilizá-lo o usuário precisa informar as seguintes informações ao sistema:
 
