@@ -26,13 +26,22 @@ Valor selecionado: 1
 Como neste caso a opção 1 (Moderado) foi selecionada, o extrato será apresentado da seguinte maneira:
 
 =========== Extrato da Conta ===========
+
 Cliente: Rian Miranda
+
 Conta: 0
+
 Agencia: 2
+
 Saldo ----> R$ 1000.00
+
 Confira nossas opções de investimento 
-para investidores com perfil Moderado
-em www.santander.com.br.
+
+para investidores com perfil Moderado em
+
+.
+www.santander.com.br
+
 ====================================
 
 ### earningsSimulator(): 
@@ -76,4 +85,4 @@ Ano 2027: Saldo ----> R$ 8481.81
 
 Rentabilidade ao final do período: 90.44%
 
-==================================================
+=======================================================================
