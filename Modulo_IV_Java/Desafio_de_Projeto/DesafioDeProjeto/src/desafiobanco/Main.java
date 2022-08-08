@@ -31,9 +31,9 @@ public class Main {
 //        checkingAccountClient0.withdraw();
 //        checkingAccountClient0.transfer();
 //
-//        client0.setClientInvestorProfile();
-//
-//        checkingAccountClient0.showReceipt();
+        client0.setClientInvestorProfile();
+
+        checkingAccountClient0.showReceipt();
 
         savingsAccountClient1.earningsSimulator();
 

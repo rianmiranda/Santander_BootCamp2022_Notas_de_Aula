@@ -36,9 +36,19 @@ public class SavingsAccount extends Account {
         futureValue = presentValue * Math.pow((1 + interestRate), numberOfYears) +
                 annualValue * ((Math.pow(1 + interestRate, numberOfYears) - 1) / interestRate);
 
-        System.out.println(String.format("Rentabilidade ao final do periodo: %.2f",
-                ((futureValue / (presentValue + numberOfYears * annualValue) - 1) * 100)) + "%");
+        //Este loop for() tem o objetivo de trazer o valor anual (annualValue) a valor presente,
+        // possibilitando a sua soma com o aporte inicial (presentValue), já que ambos preecisam
+        // estar na mesma base temporal para que a soma seja válida.
+        double anualToPresent = 0;
+        for(int year = 1; year < numberOfYears + 1; year++) {
+            anualToPresent += annualValue /Math.pow(1 + interestRate, year);
+        }
 
-        System.out.println("==============================================================================");
+        //Compara o valor futuro do investimento ao final ultimo ano do investimento,
+//      //com os valores aportados trazidos a valor presente no ano inicial.
+        System.out.println(String.format("Rentabilidade ao final do periodo: %.2f",
+                ((futureValue / (presentValue + anualToPresent) - 1) * 100)) + "%");
+
+        System.out.println("==========================================================================");
     }
 }

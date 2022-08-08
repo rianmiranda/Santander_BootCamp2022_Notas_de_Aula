@@ -63,7 +63,7 @@ public abstract class Account implements BankInterface{
         System.out.println("Cliente: " + this.getAccountClient().getName());
         System.out.println("Conta: " + this.accountNumber);
         System.out.println("Agencia: " + this.getAgency());
-        System.out.println("Saldo: " + this.getBalance());
+        System.out.println(String.format("Saldo ----> R$ %.2f", this.getBalance()));
         if(this.getAccountClient().isInvestor() &&
                 this.getAccountClient().getClientInvestorProfile() != null) {
             System.out.println("Confira nossas opcoes de investimento " +
